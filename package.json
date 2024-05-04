@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/AbhiTheWisdomSeeker/LearnNodeJS/issues"
   },
-  "homepage": "https://github.com/AbhiTheWisdomSeeker/LearnNodeJS#readme"
+  "homepage": "https://github.com/AbhiTheWisdomSeeker/LearnNodeJS#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
 }

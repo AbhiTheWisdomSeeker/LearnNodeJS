@@ -1,7 +1,12 @@
-var http = require('http');
+const fs = require('fs');
 
-//create a server object:
-http.createServer(function (req, res) {
-  res.write('Hello Worldddd!'); //write a response to the client
-  res.end(); //end the response
-}).listen(8080); //the server object listens on port 
+const input = process.argv;
+if(input[2]=='add'){
+  fs.writeFileSync(input[3],input[4]);
+}
+else if(input[2]=='remove'){
+  fs.unlinkSync(input[3]);
+}
+else{
+  console.log("Invalid Inpute");
+}
